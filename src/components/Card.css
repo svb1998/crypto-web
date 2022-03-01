@@ -1,0 +1,90 @@
+.card-container{
+    background-color: rgb(211, 242, 243);
+    width: 50%;
+    height: 150px;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 8px 10px 1px #011c29;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    transition: 0.5s ease;
+    
+}
+
+.coin-icon-container{
+    display: flex;
+}
+
+.coin-icon{
+    width: 70%;
+    margin: auto;
+    transition: 0.2s ease;
+}
+
+.coin-info{
+    padding-left: 20px;
+    background-color: rgba(230, 171, 171, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.coin-ranking{
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    border: 1px solid rgba(4, 148, 153, 0.342);
+    box-shadow: 0px 3px 7px -1px rgb(5, 43, 44);
+}
+
+.coin-nombre{
+    font-size: calc(1vw + 1vh + 1vmin);
+    
+    white-space: nowrap;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    
+}
+
+
+.coin-precio{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(1, 88, 48);
+}
+
+.coin-market-cap{
+    font-size: 16px;
+    font-weight: 600;
+}   
+
+.card-container:hover{
+    transform: scale(1.1);
+}
+
+.coin-icon:hover{
+    animation: 1.5s rotate360 infinite linear;
+    animation-fill-mode: both;
+    
+}
+
+
+@keyframes rotate360 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

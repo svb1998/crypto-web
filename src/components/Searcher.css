@@ -1,0 +1,98 @@
+.searcher-container{
+    width: 55%;
+    height: 90px;
+    box-shadow: -5px 0px 12px rgb(4, 148, 153),  5px 0 12px #9900ff;
+    display: flex;
+    border-radius: 12px;
+    border: none;
+    margin-inline: 20%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px;
+    transition: 0.5s ease;
+    
+}
+.searcher-container:hover{
+    transform: scale(1.1);
+}
+
+.searcher-container::before{
+    content: '';
+    position: absolute;
+    border-radius: 12px;
+   height: 1100%;
+   width: 900%;
+   left: -400%;
+   top: -500%;
+    background: conic-gradient(#9900ff, rgb(4, 148, 153),#9900ff);
+    box-shadow: -5px 0px 12px rgb(4, 148, 153),  5px 0 12px #9900ff;
+    animation: rotate 7s infinite linear;
+}
+
+@keyframes rotate {
+    100%{transform: rotate(-360deg);}
+}
+
+
+.searcher-tf{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-size: 22px;
+    padding-left: 25px;
+    position: relative;
+    z-index: 50000;
+}
+
+.searcher-btn-container{
+    width: 20%;
+    height: auto;
+    background-color: rgb(118, 243, 226);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    
+    
+}
+
+.searcher-btn-container:hover{
+    background-color: rgb(166, 255, 243);
+}
+
+
+
+.searcher-btn{
+    border-radius: 10px;
+    border: none;
+    offset: none;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: 0.1s ease;
+    color: #0b4242;
+}
+
+.searcher-btn:hover{
+    transform: scale(1.1);
+    color: #000808;
+}
+
+.lupa-icon{
+    width: 25px;
+}
